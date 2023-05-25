@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.aulas.AdminGestAulasAddActivity">
+
+    <TextView
+        android:id="@+id/id_addAulaEdificio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="163dp"
+        android:hint="@string/edit_aulas_edificio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaFormCodigo" />
+
+    <EditText
+        android:id="@+id/id_addAulaFormCodigo"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_aulas_codigo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaCodigo" />
+
+    <EditText
+        android:id="@+id/id_addAulaFormTipo"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_aulas_tipo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaTipo" />
+
+    <EditText
+        android:id="@+id/id_addAulaFormEdificio"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_aulas_edificio"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaEdificio" />
+
+    <Button
+        android:id="@+id/id_addAulaConfButton"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/confirm_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaFormTipo" />
+
+    <Button
+        android:id="@+id/id_addAulaVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/return_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_addAulaCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="117dp"
+        android:hint="@string/edit_aulas_codigo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_addAulaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/add_aulas_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_addAulaFormPuerta"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_aulas_puerta"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_addAulaFormPlanta"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaPuerta" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img9"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+
+    <TextView
+        android:id="@+id/id_addAulaPuerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:hint="@string/edit_aulas_puerta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaFormEdificio" />
+
+    <TextView
+        android:id="@+id/id_addAulaTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="135dp"
+        android:hint="@string/edit_aulas_tipo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaFormPuerta" />
+
+    <EditText
+        android:id="@+id/id_addAulaFormPlanta"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:ems="10"
+        android:hint="@string/edit_aulas_planta"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/id_addAulaFormPuerta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaPlanta" />
+
+    <TextView
+        android:id="@+id/id_addAulaPlanta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/edit_aulas_planta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addAulaFormEdificio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

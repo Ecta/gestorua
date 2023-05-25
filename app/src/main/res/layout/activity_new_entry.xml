@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tiuaccess.TIUAccessActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/id_addEntryAulaChangeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="@string/change_button"
+                app:layout_constraintStart_toEndOf="@+id/id_addEntryFormAula"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryAula" />
+
+            <EditText
+                android:id="@+id/id_addEntryFormTimeInit"
+                android:layout_width="145dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="55dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/new_entry_ini_time_text"
+                android:inputType="time"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryHora" />
+
+            <TextView
+                android:id="@+id/id_addEntryHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="177dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="178dp"
+                android:hint="@string/new_entry_time_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFormDate" />
+
+            <Button
+                android:id="@+id/id_addEntryDateChangeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:hint="@string/change_button"
+                app:layout_constraintStart_toEndOf="@+id/id_addEntryFormDate"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFecha" />
+
+            <Button
+                android:id="@+id/id_addEntryNewMats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="162dp"
+                android:layout_marginEnd="161dp"
+                android:hint="@string/mats_add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_ExtraMatsRecycler" />
+
+            <TextView
+                android:id="@+id/id_addEntrySeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="1dp"
+                android:hint="@string/time_separador"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toStartOf="@+id/id_addEntryFormTimeEnd"
+                app:layout_constraintStart_toEndOf="@+id/id_addEntryFormTimeInit"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryHora" />
+
+            <EditText
+                android:id="@+id/id_addEntryFormTimeEnd"
+                android:layout_width="145dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="56dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/new_entry_end_time_text"
+                android:inputType="time"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryHora" />
+
+            <TextView
+                android:id="@+id/id_addEntryAula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="180dp"
+                android:hint="@string/new_entry_aula_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFormProf" />
+
+            <EditText
+                android:id="@+id/id_addEntryFormAula"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="55dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/edit_aulas_codigo"
+                android:inputType="text"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryAula" />
+
+            <EditText
+                android:id="@+id/id_addEntryFormDate"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="55dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/new_entry_date_text"
+                android:inputType="date"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFecha" />
+
+            <EditText
+                android:id="@+id/id_addEntryFormProf"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="56dp"
+                android:ems="10"
+                android:hint="@string/new_entry_prof_text_placeholder"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryProf" />
+
+            <TextView
+                android:id="@+id/id_addEntryProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="156dp"
+                android:hint="@string/new_entry_prof_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/id_addEntryFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="171dp"
+                android:hint="@string/new_entry_date_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFormAula" />
+
+            <TextView
+                android:id="@+id/id_addEntryMats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="110dp"
+                android:hint="@string/new_entry_mats_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#D0D0D0"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryFormTimeInit" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/id_ExtraMatsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_addEntryMats" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/id_addEntryConfButton"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:hint="@string/confirm_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_addEntryVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/return_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img11"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+
+    <TextView
+        android:id="@+id/id_addEntryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/new_entry_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

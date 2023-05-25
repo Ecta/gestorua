@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.profs.AdminGestProfAddActivity">
+
+    <Button
+        android:id="@+id/id_addProfesoresConfButton"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="170dp"
+        android:hint="@string/confirm_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_addProfesoresDpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="123dp"
+        android:hint="@string/edit_profesores_dpt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addProfesoresFormName" />
+
+    <EditText
+        android:id="@+id/id_addProfesoresFormName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_profesores_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addProfesoresName" />
+
+    <EditText
+        android:id="@+id/id_addProfesoresFormTIU"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_profesores_tiu_placeholder"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addProfesoresTIU" />
+
+    <EditText
+        android:id="@+id/id_addProfesoresFormDpt"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_profesores_dpt"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addProfesoresDpt" />
+
+    <TextView
+        android:id="@+id/id_addProfesoresName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="101dp"
+        android:hint="@string/edit_profesores_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_addProfesoresFormTIU" />
+
+    <TextView
+        android:id="@+id/id_addProfesoresTIU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="142dp"
+        android:hint="@string/edit_profesores_tiu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img5"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+
+    <Button
+        android:id="@+id/id_addProfesoresVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/return_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_addProfesoresTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/add_profesores_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

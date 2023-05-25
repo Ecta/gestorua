@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.profs.AdminGestProfEditActivity">
+
+    <EditText
+        android:id="@+id/id_editProfesoresFormName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_profesores_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editProfesoresName" />
+
+    <EditText
+        android:id="@+id/id_editProfesoresFormDpt"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_profesores_dpt"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editProfesoresDpt" />
+
+    <TextView
+        android:id="@+id/id_editProfesoresTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/edit_profesores_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_editProfesoresName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="101dp"
+        android:hint="@string/edit_profesores_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_editProfesoresDpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="123dp"
+        android:hint="@string/edit_profesores_dpt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editProfesoresFormName" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img3"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+
+    <Button
+        android:id="@+id/id_editProfesoresVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/return_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_editProfesoresConfButton"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="224dp"
+        android:hint="@string/confirm_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GestorUA" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#003B5C</item>
+        <item name="colorPrimaryVariant">#FEC700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#E0E5E1</item>
+        <item name="colorSecondaryVariant">#EE7100</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorHint">#E0E5E1</item>
+        <item name="android:textColorSecondary">#CCCCCC</item>
+        <item name="android:textColorHintInverse">#E0E5E1</item>
+        <item name="colorButtonNormal">#003B5C</item>
+    </style>
+    <style name="PickerDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Cambia el color del selector de hora -->
+        <item name="colorAccent">#003B5C</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PickerDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/PickerDialogButtonStyle</item>
+        <item name="android:timePickerStyle">@style/TimePickerStyle</item>
+    </style>
+    <style name="PickerDialogButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#003B5C</item>
+    </style>
+    <style name="TimePickerStyle" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#003B5C</item>
+    </style>
+</resources>

@@ -1,0 +1,136 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Gestor de recursos para aulas</string>
+
+    <!-- App Messages -->
+    <string name="welcome_message">Bienvenid@!</string>
+    <string name="new_entry_message">Nueva asignación</string>
+    <string name="scan_message">Acerca un llavero NFC al terminal o pulsa en una de las opciones disponibles</string>
+    <string name="options_message">Elige una de las opciones disponibles para la gestión de materiales</string>
+    <string name="tiu_access_message">Introduce un número de TIU válido y pulsa el botón "Enviar" para continuar</string>
+    <string name="admin_login_message">Acceder como administrador</string>
+    <string name="admin_panel_display_message">Introduce tus credenciales para identificarte en el sistema</string>
+
+    <!-- App Buttons -->
+    <string name="add_button">Añadir</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="return_button">Volver</string>
+    <string name="exit_button">Salir</string>
+    <string name="confirm_button">Confirmar</string>
+    <string name="edit_button">Editar</string>
+    <string name="change_button">Cambiar</string>
+    <string name="delete_button">Eliminar</string>
+    <string name="send_button">Enviar</string>
+    <string name="quit_button">Quitar</string>
+    <string name="list_filtrar_text"><u>Filtros</u></string>
+    <string name="filter_button">Filtrar</string>
+    <string name="active_check">Activo</string>
+
+
+    <string name="time_separador">-</string>
+    <string name="mats_add">+</string>
+
+    <!-- Main Menu Option Buttons -->
+    <string name="tiu_access_button">Acceder con TIU</string>
+    <string name="manual_access_button">Acceder de forma manual</string>
+    <string name="admin_panel_button">Panel de administrador</string>
+
+    <!-- TIU Access Resources -->
+    <string name="tiu_access_title">Acceso con TIU</string>
+    <string name="tiu_access_placeholder">Introduce el código ("0XXXXXXXX")</string>
+
+    <!-- Admin Access Resources -->
+    <string name="login_email_placeholder">Correo electrónico</string>
+    <string name="login_password_placeholder">Contraseña</string>
+    <string name="login_access_button">Acceder</string>
+
+    <!-- Admin Panel Resources -->
+    <string name="admin_panel_title">Panel de administrador</string>
+    <string name="admin_panel_manage_prof_button">Gestionar profesores</string>
+    <string name="admin_panel_manage_dept_button">Gestionar departamentos</string>
+    <string name="admin_panel_manage_class_button">Gestionar aulas</string>
+    <string name="admin_panel_manage_keys_button">Gestionar llaves</string>
+    <string name="admin_panel_manage_mats_button">Gestionar materiales</string>
+    <string name="admin_panel_manage_ass_button">Gestionar asignaciones</string>
+
+    <!-- Profesores Gest. Resources -->
+    <string name="list_profesores_title">Lista de profesores</string>
+    <string name="list_profesores_name_placeholder">Nombre completo</string>
+    <string name="list_profesores_departamento_placeholder">Departamento</string>
+
+    <!-- Profesores Add Resources -->
+    <string name="add_profesores_title">Añadir profesor</string>
+
+    <!-- Profesores Edit Resources -->
+    <string name="edit_profesores_title">Editar profesor</string>
+    <string name="edit_profesores_name">Nombre completo</string>
+    <string name="edit_profesores_dpt">Departamento</string>
+    <string name="edit_profesores_tiu">Código TIU</string>
+    <string name="edit_profesores_tiu_placeholder">TIU ("0XXXXXXXX")</string>
+
+    <!-- Departamentos Gest. Resources -->
+    <string name="list_departamentos_title">Departamentos</string>
+
+    <!-- Departamentos Add Resources -->
+    <string name="add_departamentos_title">Añadir departamento</string>
+
+    <!-- Departamentos Edit Resources -->
+    <string name="edit_departamentos_title">Editar departamento</string>
+    <string name="edit_departamentos_name">Nombre del departamento</string>
+    <string name="edit_departamentos_siglas">Siglas</string>
+
+    <!-- Aulas Gest. Resources -->
+    <string name="list_aulas_title">Lista de aulas</string>
+
+    <!-- Aulas Add Resources -->
+    <string name="add_aulas_title">Añadir aula</string>
+
+    <!-- Aulas Edit Resources -->
+    <string name="edit_aulas_title">Editar aula</string>
+    <string name="edit_aulas_codigo">Código del aula</string>
+    <string name="edit_aulas_edificio">Edificio</string>
+    <string name="edit_aulas_planta">Planta</string>
+    <string name="edit_aulas_puerta">Puerta</string>
+    <string name="edit_aulas_tipo">Tipo de aula</string>
+
+    <!-- New Entry Resources -->
+    <string name="new_entry_title">Nuevo préstamo</string>
+    <string name="new_entry_prof_text">Profesor</string>
+    <string name="new_entry_aula_text">Aula</string>
+    <string name="new_entry_date_text">Fecha</string>
+    <string name="new_entry_time_text">Hora</string>
+    <string name="new_entry_mats_text">Otros materiales</string>
+    <string name="new_entry_ini_time_text">Hora inicio</string>
+    <string name="new_entry_end_time_text">Hora fin</string>
+    <string name="new_entry_prof_text_placeholder">Número de TIU del profesor</string>
+
+    <!-- Return Entry Resources -->
+    <string name="return_entry_title">Devolución de material</string>
+
+    <!-- Materiales Gest. Resources -->
+    <string name="gest_mats_title">Gestión de materiales</string>
+    <string name="gest_mats_add_button">Añadir material</string>
+    <string name="gest_mats_edit_button">Editar material</string>
+
+    <!-- Materiales Add Resources -->
+    <string name="add_mats_title">Añadir material</string>
+    <string name="add_mats_tipo_text">Tipo de material</string>
+    <string name="add_mats_tipo_placeholder">Mando a distancia, cable, puntero...</string>
+    <string name="add_mats_aula_text">Aula relacionada</string>
+    <string name="add_mats_aula_placeholder">ID del aula o vacío si es universal</string>
+
+    <!-- Materiales Edit Resources -->
+    <string name="edit_mats_title">Editar material</string>
+    <string name="edit_mats_tipo_text">Tipo de material</string>
+    <string name="edit_mats_tipo_placeholder">Mando a distancia, cable, puntero...</string>
+    <string name="edit_mats_aula_text">Aula relacionada</string>
+    <string name="edit_mats_aula_placeholder">ID del aula o vacío si es universal</string>
+    <string name="edit_mats_disp_placeholder">Disponible (desactivar si perdido/estropeado)</string>
+    <string name="edit_mats_asign_placeholder">Asignado (desactivar para liberar)</string>
+
+    <!-- Registros Gest. Resources -->
+    <string name="regs_gest_title">Registros</string>
+    <string name="regs_profesor">Profesor</string>
+    <string name="regs_placeholder">No hay registros almacenados para el día seleccionado</string>
+
+</resources>

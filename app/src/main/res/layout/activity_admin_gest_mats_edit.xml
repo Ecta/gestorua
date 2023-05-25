@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.mats.AdminGestMatsEditActivity">
+
+    <TextView
+        android:id="@+id/id_editMatsTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="112dp"
+        android:hint="@string/edit_mats_tipo_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_editMatsFormTipo"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_mats_tipo_placeholder"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsTipo" />
+
+    <TextView
+        android:id="@+id/id_editMatsAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="109dp"
+        android:hint="@string/edit_mats_aula_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsFormTipo" />
+
+    <EditText
+        android:id="@+id/id_editMatsFormAula"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:hint="@string/edit_mats_aula_placeholder"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsAula" />
+
+    <Button
+        android:id="@+id/id_editMatsConfButton"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/confirm_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsAsignSwitch" />
+
+    <TextView
+        android:id="@+id/id_editMatsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/edit_mats_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_editMatsVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/return_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img14"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="-14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/id_editMatsDispSwitch"
+        android:theme="@style/SwitchStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="39dp"
+        android:hint="@string/edit_mats_disp_placeholder"
+        android:textColorHint="#D0D0D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsFormAula" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/id_editMatsAsignSwitch"
+        android:theme="@style/SwitchStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/edit_mats_asign_placeholder"
+        android:textColorHint="#D0D0D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_editMatsDispSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

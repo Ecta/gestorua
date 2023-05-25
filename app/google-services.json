@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151994946111",
+    "project_id": "gestorua-972ee",
+    "storage_bucket": "gestorua-972ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151994946111:android:2d4db19da69a1bcc429e8a",
+        "android_client_info": {
+          "package_name": "com.enriquecortesdev.gestorua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151994946111-bckum5d1r7bjl7igclthuoa238l6uccu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB4lZdFXFvtaNrJ_j0DZ_sLCfOXAglqJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151994946111-bckum5d1r7bjl7igclthuoa238l6uccu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

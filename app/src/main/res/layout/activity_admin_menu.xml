@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminMenuActivity">
+
+    <TextView
+        android:id="@+id/welcomeMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="72dp"
+        android:hint="@string/admin_panel_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#EE7100"
+        android:hint="@string/exit_button"
+        app:layout_constraintBottom_toTopOf="@+id/ua_logo_img2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profesores_button"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/admin_panel_manage_prof_button"
+        app:layout_constraintBottom_toTopOf="@+id/departamentos_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/departamentos_button"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/admin_panel_manage_dept_button"
+        app:layout_constraintBottom_toTopOf="@+id/aulas_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/aulas_button"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/admin_panel_manage_class_button"
+        app:layout_constraintBottom_toTopOf="@+id/materiales_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/materiales_button"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/admin_panel_manage_mats_button"
+        app:layout_constraintBottom_toTopOf="@+id/asignaciones_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/asignaciones_button"
+        android:layout_width="251dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="@string/admin_panel_manage_ass_button"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ua_logo_img2"
+        android:layout_width="224dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ua_logo_color" />
+</androidx.constraintlayout.widget.ConstraintLayout>

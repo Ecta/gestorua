@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <TextView
+        android:id="@+id/id_regsItemProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/list_profesores_name_placeholder"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_regsItemAula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/list_profesores_departamento_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_regsItemProfesor" />
+
+    <TextView
+        android:id="@+id/id_regsItemFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/list_profesores_departamento_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_regsItemHoraIni"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/new_entry_ini_time_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/id_regsItemSeparator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_regsItemHoraFin"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/new_entry_end_time_text"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/id_regsItemSeparator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_regsItemSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:hint="@string/time_separador"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#D0D0D0"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/id_regsItemHoraFin"
+        app:layout_constraintStart_toEndOf="@+id/id_regsItemHoraIni"
+        app:layout_constraintTop_toBottomOf="@+id/id_regsItemFecha" />
+
+    <CheckBox
+        android:id="@+id/id_regsItemCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="45dp"
+        android:enabled="false"
+        android:hint="@string/active_check"
+        android:text="Activo"
+        android:textColor="#D0D0D0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
